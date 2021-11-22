@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [g1]
+    WITH PASSWORD = N'b0ypxsfq+cwmdzcqdfvNbrvimsFT7_&#$!~<vbewi84ft,pr', SID = 0xABD999C8572C0B48B92224D7E7E533DA, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+
