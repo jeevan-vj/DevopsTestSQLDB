@@ -15,9 +15,7 @@ if(!(Test-Path $buildOutPutDacpacFilePathTestProject)){
     Exit(1)
 }
 
-
 Write-Host "Creating SQL Server in Docker"
-
 
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=PassW@rd123" `
    -p 1434:1433 --name sql1 -h sql1 `
@@ -32,7 +30,6 @@ docker exec  sql1 /opt/mssql-tools/bin/sqlcmd `
 if(!($?) -or $lastExitCode -ne 0){
     exit(1)
 }
-
 
 Write-Host "Deploying Unit Tests"
 

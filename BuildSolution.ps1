@@ -1,6 +1,3 @@
-$root = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition)
-$projectName = "DevopsTest"
-$SaPassword = "PassW@rd123"
 
 $msbuildPath = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\MSBuild\\Current\\Bin\\msbuild.exe"
 

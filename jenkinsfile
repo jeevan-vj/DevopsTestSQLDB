@@ -20,11 +20,6 @@ pipeline {
                 powershell(script: "./RunUnitTest.ps1")
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
