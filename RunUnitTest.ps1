@@ -1,3 +1,4 @@
+$root = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition)
 $projectName = "DevopsTest"
 $SaPassword = "PassW@rd123"
 
