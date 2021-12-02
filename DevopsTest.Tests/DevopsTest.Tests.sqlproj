@@ -66,6 +66,8 @@
     <Folder Include="tSQLt\Stored Procedures\" />
     <Folder Include="tSQLt\User Defined Types\" />
     <Folder Include="Assemblies\" />
+    <Folder Include="testCalcApp\" />
+    <Folder Include="testCalcApp\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="tSQLt\Tables\Private_NullCellTable.sql" />
@@ -244,6 +246,8 @@
     <Build Include="tSQLt\User Defined Types\AssertStringTable.sql" />
     <Build Include="Security\BookTests.sql" />
     <Build Include="Security\tSQLt.sql" />
+    <Build Include="testCalcApp\Stored Procedures\test that Add function adds two numbers.sql" />
+    <Build Include="Security\testCalcApp.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
@@ -259,11 +263,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ArtifactReference Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
-      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
-      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
-      <DatabaseVariableLiteralValue>sys</DatabaseVariableLiteralValue>
-    </ArtifactReference>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\150\SqlSchemas\master.dacpac">
       <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\150\SqlSchemas\master.dacpac</HintPath>
       <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>

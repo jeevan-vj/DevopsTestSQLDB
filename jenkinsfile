@@ -1,0 +1,34 @@
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Verify Branch') {
+         steps {
+            echo "$GIT_BRANCH"
+         }
+        }
+        stage('Build'){
+            steps{
+                 powershell 'Write-Host "Hello Building"'
+                 powershell(script: "./BuildSolution.ps1")
+            }
+        }
+        stage('Unit Tests'){
+            steps{
+                powershell 'Write-Host "Hello Jeevan from PS"'
+                powershell(script: "./RunUnitTest.ps1")
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}

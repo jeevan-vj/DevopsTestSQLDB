@@ -1,0 +1,10 @@
+﻿<Project Sdk="MSBuild.Sdk.SqlProj/1.15.0">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\DevopsTest\dbo\**\*.sql" />
+  </ItemGroup>
+
+</Project>
